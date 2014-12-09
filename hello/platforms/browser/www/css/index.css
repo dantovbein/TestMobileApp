@@ -35,3 +35,14 @@ input,select {
 	font-size: 7rem;
 }
 
+.btn {
+	width: 100%;
+	background-color: yellow;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.btn span { 
+	font-size: 6rem;
+	color: red;
+}
