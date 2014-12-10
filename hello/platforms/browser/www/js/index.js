@@ -38,13 +38,22 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        alert(localStorage.nombre);
+        //var listeningElement = parentElement.querySelector('.listening');
+        //var receivedElement = parentElement.querySelector('.received');
 
-        console.log('Received Event: ' + id);
+        //listeningElement.setAttribute('style', 'display:none;');
+        //receivedElement.setAttribute('style', 'display:block;');
+
+        //console.log('Received Event: ' + id);
+        $(".btn.save").click({ context : this },function(event){
+            var self = event.data.context;
+            self.saveData();
+        });
+    },
+    saveData : function() {
+      debugger;
     }
 };
 
