@@ -39,7 +39,9 @@ var app = {
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
 
-        alert(localStorage.nombre);
+        if(localStorage.nombre) {
+            alert(localStorage.nombre);
+        }
         //var listeningElement = parentElement.querySelector('.listening');
         //var receivedElement = parentElement.querySelector('.received');
 
@@ -53,7 +55,7 @@ var app = {
         });
     },
     saveData : function() {
-      debugger;
+      localStorage.nombre = "Danto";
     }
 };
 
